@@ -1,7 +1,13 @@
+body{
+    background-color: #ecf0f1;
+}
 h1 {
     color:#34495e;
 }
-
 .checked{
-    color:#7f8c8d;
+    color:#e08c8d;
+}
+
+.btn{
+    cursor: pointer;
 }
