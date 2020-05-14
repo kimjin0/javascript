@@ -1,11 +1,20 @@
 const title = document.querySelector("#title");
-const CHECKED_CLASS = "checked";
+const BASE_COLOR = "rgb(52, 73, 94)";
+const OTHER_COLOR = "#7f8c8d";
+
 title.innerHTML = "Hello~~~";
 
 function handleClick() {
-    title.style.color = "red";
+    const currentColor = title.style.color;
+    if (currentColor === BASE_COLOR) {
+        title.style.color = OTHER_COLOR;
+    } else {
+        title.style.color = BASE_COLOR;
+    }
 }
+
 function init() {
     title.addEventListener("click", handleClick);
 }
+
 init();
