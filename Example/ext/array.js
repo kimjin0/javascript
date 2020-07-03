@@ -23,18 +23,18 @@
         console.log(arr[i]);
     }
 
-    // console.log("for of");
-    // for (let value of arr) {
-    //     console.log(value);
-    // }
+    console.log("for of");
+    for (let value of arr) {
+        console.log(value);
+    }
 
-    // console.log("for each");
-    // arr.forEach((value) => console.log(value));
+    console.log("for each");
+    arr.forEach((value) => console.log(value));
 
-    // const rst = arr.map((v) => {
-    //     return v;
-    //     // return v == "a" ? "aa" : v;
-    // });
+    const rst = arr.map((v) => {
+        return v;
+        // return v == "a" ? "aa" : v;
+    });
 
-    // console.log(rst);
+    console.log(rst);
 }
