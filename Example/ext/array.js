@@ -1,4 +1,6 @@
 {
+    console.log("########## 배열 추가/삭제 ##########");
+
     const arr = ["a", "b", "c"];
 
     //배열추가
@@ -12,11 +14,14 @@
 
     arr.shift();
     console.log("shift 앞에서 삭제", arr);
-
+}
+{
+    console.log("########## 배열 반복 ##########");
+    const arr = ["aA", "bB", "cC"];
     // //배열을 반복
-    // for (let i = 0; i < arr.length; i++) {
-    //     console.log(arr[i]);
-    // }
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
 
     // console.log("for of");
     // for (let value of arr) {
