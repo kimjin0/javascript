@@ -24,9 +24,9 @@
     }
 
     console.log("for of");
-    for (let value of arr) {
-        console.log(value);
-    }
+    // for (let value of arr) {
+    //     console.log(value);
+    // }
 
     console.log("for each");
     arr.forEach((value) => console.log(value));
@@ -37,4 +37,7 @@
     });
 
     console.log(rst);
+}
+{
+    console.log("splice 개념파악");
 }
