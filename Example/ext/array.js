@@ -39,5 +39,19 @@
     console.log(rst);
 }
 {
-    console.log("splice 개념파악");
+    console.log("splice() : 기존 배열 변하고 잘려진 배열을 반환홤.");
+    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    console.log(arr.splice(1, 2));
+    console.log(arr);
+}
+{
+    console.log(
+        "slice() 메소드는 begin부터 end 전까지의 복사본을 새로운 배열 객체로 반환한다. 즉, 원본 배열은 수정되지 않는다."
+    );
+
+    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    console.log(arr.slice(1, 3));
+    console.log(arr);
 }
