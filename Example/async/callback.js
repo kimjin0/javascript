@@ -2,6 +2,9 @@
 //JavaScript is synchronous.
 //Excute the code block by orger after hoisting.
 //hoisting:var, function declaration
+
+//https://youtu.be/s1vpVCrT8f4
+
 console.log("1");
 setTimeout(() => console.log("2"), 1000);
 console.log("3");
@@ -68,4 +71,3 @@ userStorage.loginUser(
         console.log(error);
     }
 );
-// 18.54초까지 진행함. (https://www.youtube.com/watch?v=s1vpVCrT8f4&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=11)
