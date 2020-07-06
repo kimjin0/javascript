@@ -24,7 +24,7 @@ class UserStorage {
     loginUser(id, password, onSuccess, onError) {
         setTimeout(() => {
             if (
-                (id === "kimjin0" && password === "dream") ||
+                (id === "kimjin0" && password === "qwe123") ||
                 (id === "coder" && password === "academy")
             ) {
                 onSuccess(id);
