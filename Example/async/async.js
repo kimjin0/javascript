@@ -69,5 +69,3 @@ function pickOnlyOne() {
     return Promise.race([getBanana(), getApple()]);
 }
 pickOnlyOne().then(console.log);
-
-//숙제 callback-to-promise.js를 async 코드를 이용해서 해봐라...
