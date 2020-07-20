@@ -1,0 +1,114 @@
+*{box-sizing:border-box}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video
+{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;outline:none}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+  height: 800px;
+  border: 2px solid black;
+  background-color: #40444D;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+.container .logo {
+  width:100px;
+  height:100px;
+  margin-bottom: 10px;
+  background:url(logo.png) no-repeat center;
+  cursor: pointer;
+}
+.container .logo:hover{
+  transform: scale(1.2);
+}
+.container .category{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.category img:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.category div:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.container .category .shirts,.pants,.skirt{
+  width:30px;
+  height:30px;
+}
+.category .blue{
+  width:40px;
+  height:30px;
+  font-size: small;
+  color: black;
+  background-color:#3989C6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .category .yellow{
+  width:50px;
+  height:30px;
+  font-size: small;
+  background-color: #F9BC2A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .category .pink{
+  width:40px;
+  height:30px;
+  font-size: small;
+  color: black;
+  background-color: #FD7D83;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  width: 100%;
+  height: 500px;
+  overflow:auto;
+}
+.sel{
+  height: 40px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.sel img {
+  width:30px;
+  height:30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.sel div{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: small;
+}
