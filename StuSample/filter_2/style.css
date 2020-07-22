@@ -1,0 +1,99 @@
+:root {
+  --bg-color: #373c45;
+  --main-width: 500px;
+  --list-height: 50px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+li {
+  list-style: none;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--main-width);
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .menu {
+  display: flex;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.main .menu li {
+  background-size: cover;
+  height: 100%;
+  margin: 0px 7px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  flex-grow: 1;
+  cursor: pointer;
+}
+.main .menu li img {
+  width: auto;
+  height: 100%;
+}
+.main .menu li div {
+  margin-top: 10px;
+  width: 100%;
+}
+.main .contents {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.main .items {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  float: left;
+  padding-right: 3px;
+  width: calc(100% + 19px);
+}
+
+.main .items li {
+  height: var(--list-height);
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+}
+.main .items li img {
+  height: 85%;
+  width: auto;
+  margin: 0px 20px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .main .logo {
+    margin-top: 20px;
+  }
+}
