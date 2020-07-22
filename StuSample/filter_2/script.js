@@ -11,7 +11,8 @@ class ShopManager {
 
         this.displayItems(list);
 
-        for (let i of this.menu.children) i.addEventListener("click", this.onClick.bind(this));
+        for (let i of this.menu.children)
+            i.addEventListener("click", this.onClick.bind(this));
     }
     displayItems(list) {
         let data = "";
@@ -27,7 +28,8 @@ class ShopManager {
         let li = e.target.closest(".menu li");
         if (li == undefined) return;
         let list = this.data.filter((item) => {
-            if (li.dataset.group == "color") return li.dataset.group2 == item[1];
+            if (li.dataset.group == "color")
+                return li.dataset.group2 == item[1];
             if (li.dataset.group == "type") return li.dataset.group2 == item[0];
         });
         this.displayItems(list);
@@ -45,11 +47,14 @@ let list = [];
 for (let i = 0; i < COUNT; i++) {
     let type = ITEM_TYPE[Math.trunc(Math.random() * ITEM_COLOR.length)];
     let color = ITEM_COLOR[Math.trunc(Math.random() * ITEM_TYPE.length)];
-    let gen = type == ITEM_TYPE[1] ? ITEM_GENDER[1] : ITEM_GENDER[Math.trunc(Math.random() * 2)];
+    let gen =
+        type == ITEM_TYPE[1]
+            ? ITEM_GENDER[1]
+            : ITEM_GENDER[Math.trunc(Math.random() * 2)];
     let size = ITEM_SIZE[Math.trunc(Math.random() * ITEM_SIZE.length)];
     let item = [type, color, gen, size];
     list.push(item);
 }
-
+console.log(list);
 // starting point
 let shop = new ShopManager(list);
