@@ -60,11 +60,10 @@ class UserStorage {
                 } else {
                     reject(new Error("not found"));
                 }
-            }, 1000);
+            }, 2000);
         });
     }
-
-    getRole(user) {
+    getRoles(user) {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 if (user === "kimjin0") {
@@ -83,5 +82,5 @@ const pwd = "qwe123";
 
 userStorage //
     .getUser(id, pwd)
-    .then(userStorage.getRole)
-    .then(console.log);
+    .then(userStorage.getRoles)
+    .then((user) => alert(`Hello ${user.name}, you have ${user.role}`));
