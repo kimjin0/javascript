@@ -51,6 +51,31 @@ userStorage.getUser(
 */
 
 // ######## callBack to Promise ########
+// class UserStorage {
+//     getUser(id, pwd) {
+//         return new Promise((resolve, reject) => {
+//             setTimeout(() => {
+//                 if ((id === "kimjin0" && pwd === "qwe123") || (id === "coder" && pwd === "academy")) {
+//                     resolve(id);
+//                 } else {
+//                     reject(new Error("not found"));
+//                 }
+//             }, 2000);
+//         });
+//     }
+//     getRoles(user) {
+//         return new Promise((resolve, reject) => {
+//             setTimeout(() => {
+//                 if (user === "kimjin0") {
+//                     resolve({ name: "kimjin0", role: "admin" });
+//                 } else {
+//                     reject(new Error("no access"));
+//                 }
+//             }, 1000);
+//         });
+//     }
+// }
+
 class UserStorage {
     getUser(id, pwd) {
         return new Promise((resolve, reject) => {
@@ -60,7 +85,7 @@ class UserStorage {
                 } else {
                     reject(new Error("not found"));
                 }
-            }, 2000);
+            }, 1000);
         });
     }
     getRoles(user) {
@@ -75,12 +100,8 @@ class UserStorage {
         });
     }
 }
-
 const userStorage = new UserStorage();
-const id = "kimjin0";
-const pwd = "qwe123";
-
 userStorage //
-    .getUser(id, pwd)
+    .getUser("kimjin0", "qwe123")
     .then(userStorage.getRoles)
     .then((user) => alert(`Hello ${user.name}, you have ${user.role}`));
