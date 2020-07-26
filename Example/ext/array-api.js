@@ -34,12 +34,18 @@
     const members = [
         new member("A", 10, true, 45),
         new member("B", 20, true, 45),
-        new member("C", 30, true, 45),
-        new member("D", 40, true, 45),
+        new member("C", 50, true, 45),
+        new member("D", 70, true, 45),
+        new member("E", 80, true, 45),
     ];
     // console.log(members);
     // members.map((member) => console.log(member.name));
-    let result = members.filter((member) => member.age >= 20);
+    // let result = members.filter((member) => member.age >= 20);
 
+    let results = members //
+        // .map((member) => member.age)
+        .filter((member) => member.age >= 50);
+
+    let result = results.map((member) => member.enrolled);
     console.log(result);
 }
