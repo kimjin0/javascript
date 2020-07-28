@@ -22,30 +22,36 @@
 //     console.log(result);
 // }
 
+// {
+//     class member {
+//         constructor(name, age, enrolled, score) {
+//             this.name = name;
+//             this.age = age;
+//             this.enrolled = enrolled;
+//             this.scrore = score;
+//         }
+//     }
+//     const members = [
+//         new member("A", 10, true, 45),
+//         new member("B", 20, true, 45),
+//         new member("C", 50, true, 45),
+//         new member("D", 70, true, 45),
+//         new member("E", 80, true, 45),
+//     ];
+//     // console.log(members);
+//     // members.map((member) => console.log(member.name));
+//     // let result = members.filter((member) => member.age >= 20);
+
+//     let results = members //
+//         // .map((member) => member.age)
+//         .filter((member) => member.age >= 50);
+
+//     let result = results.map((member) => member.enrolled);
+//     console.log(result);
+// }
+
 {
-    class member {
-        constructor(name, age, enrolled, score) {
-            this.name = name;
-            this.age = age;
-            this.enrolled = enrolled;
-            this.scrore = score;
-        }
-    }
-    const members = [
-        new member("A", 10, true, 45),
-        new member("B", 20, true, 45),
-        new member("C", 50, true, 45),
-        new member("D", 70, true, 45),
-        new member("E", 80, true, 45),
-    ];
-    // console.log(members);
-    // members.map((member) => console.log(member.name));
-    // let result = members.filter((member) => member.age >= 20);
-
-    let results = members //
-        // .map((member) => member.age)
-        .filter((member) => member.age >= 50);
-
-    let result = results.map((member) => member.enrolled);
+    const array = [1, 2, 3, 4, 5];
+    const result = array.slice(2, 2);
     console.log(result);
 }
