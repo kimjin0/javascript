@@ -51,7 +51,7 @@
 // }
 
 {
-    const array = [1, 2, 3, 4, 5];
-    const result = array.slice(2, 2);
+    const data = "1,2,3,4,5";
+    const result = data.split(",", 3);
     console.log(result);
 }
