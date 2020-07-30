@@ -50,8 +50,8 @@
 //     console.log(result);
 // }
 
-{
-    const data = "1,2,3,4,5";
-    const result = data.split(",", 3);
-    console.log(result);
-}
+// {
+//     const data = "1,2,3,4,5";
+//     const result = data.split(",", 3);
+//     console.log(result);
+// }
