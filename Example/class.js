@@ -13,4 +13,4 @@ console.log(kimjin0.name);
 console.log(kimjin0.age);
 kimjin0.speak();
 
-https://youtu.be/_DLhUBWsRtw?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&t=614
+// https://youtu.be/_DLhUBWsRtw?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&t=614
