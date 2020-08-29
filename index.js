@@ -1,5 +1,4 @@
 const title = document.querySelector("#title");
-console.dir(title);
 const CLICKED_CLASS = "checked";
 
 function handleClick() {
