@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 공부 > function 이용해서 자판기를 만들어보자</title>
+</head>
+<body>
+<script>
+    const goods = {}
+    const addGoods = (price, goods)=>{
+        goods = {'price':price, 'goods':goods}
+        console.log(goods)
+    }
+    const vendingMachine = (price, goods) => {
+        
+        
+        console.log(`${price}, ${goods}`)
+    }
+    vendingMachine(200, '커피')
+</script>    
+</body>
+</html>
