@@ -70,3 +70,5 @@ let a = new Dog('Mitzie');
 let b = new Dog('kakao');
 a.speak();
 b.speak();
+
+// #### Species
