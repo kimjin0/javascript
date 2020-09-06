@@ -1,4 +1,5 @@
 // Prototype methods
+// https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes
 class Rectangle {
     constructor(width, height) {
         this.width = width;
