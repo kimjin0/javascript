@@ -86,12 +86,14 @@ class Dog extends Animal {
     }
 
     speak() {
+        super.speak();
         console.log(`${this.name}의 이름을 가진 멍멍이 입니다.`);
     }
 }
-// #### Species
-const animal = new Animal("바둑이");
-const dog = new Dog("바둑이");
+// const animal = new Animal('바둑이');
+const dog = new Dog('바둑이');
 
-animal.speak();
+// animal.speak();
 dog.speak();
+
+// https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes
