@@ -46,29 +46,53 @@
 // console.log(Point.distance(p1, p2));
 
 // #### extends를 통한 클래스 상속
+// class Animal {
+//     constructor(name) {
+//         this.name = name;
+//     }
+
+//     speak() {
+//         console.log(`${this.name} makes a noise.`);
+//     }
+// }
+
+// class Dog extends Animal {
+//     constructor(name) {
+//         super(name);
+//     }
+
+//     speak() {
+//         console.log(`${this.name} barks.`);
+//     }
+// }
+
+// let a = new Dog('Mitzie');
+// let b = new Dog('kakao');
+// a.speak();
+// b.speak();
+// class 상속 따라하기
 class Animal {
     constructor(name) {
         this.name = name;
     }
 
     speak() {
-        console.log(`${this.name} makes a noise.`);
+        console.log(`${this.name}의 이름을 가진 동물 입니다.`);
     }
 }
-
 class Dog extends Animal {
     constructor(name) {
         super(name);
     }
 
     speak() {
-        console.log(`${this.name} barks.`);
+        console.log(`${this.name}의 이름을 가진 멍멍이 입니다.`);
     }
 }
+const animal = new Animal("바둑이");
+const dog = new Dog("바둑이");
 
-let a = new Dog('Mitzie');
-let b = new Dog('kakao');
-a.speak();
-b.speak();
+animal.speak();
+dog.speak();
 
 // #### Species
