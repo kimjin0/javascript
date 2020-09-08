@@ -3,35 +3,42 @@
 
 let a, b, rest;
 
-[a, b] = [10, 20];
-console.log(a); // 10
+// [a, b] = [10, 20];
+// console.log(a); // 10
 
-[a, b, ...rest] = [10, 20, 30, 40, 50];
-console.log(rest); // Array [30,40,50]
+// [a, b, ...rest] = [10, 20, 30, 40, 50];
+// console.log(rest); // Array [30,40,50]
 
-({ a, b } = { a: 10, b: 20 });
-console.log(a); // 10
-console.log(b); // 20
+// ({ a, b } = { a: 10, b: 20 });
+// console.log(a); // 10
+// console.log(b); // 20
 
 ({ a, b, ...rest } = { a: 10, b: 20, c: 30, d: 40 });
-console.log(a); // 10
-console.log(b); // 20
-console.log(rest); // {c:30, d:40}
+// console.log(a);
+// console.log(rest);
 
-console.log('### 배열 구조 분해 ###');
-let foo = ['one', 'two', 'three'];
-let [one, two, three] = foo;
+// ({ a, b, ...rest } = { a: 10, b: 20, c: 30, d: 40 });
+// console.log(a); // 10
+// console.log(b); // 20
+// console.log(rest); // {c:30, d:40}
+
+console.log("### 배열 구조 분해 ###");
+let foo = ["one", "two", "three", "1", "2", "3"];
+let [one, , three, ...rest2] = foo;
 console.log(one); // "one"
 console.log(two); // "two"
 console.log(three); // "three"
+console.log(rest2); // "three"
 
-console.log('# 변수의 선언이 분리되어도 구조 분해를 통해 값을 할당할 수 있습니다. #');
+console.log(
+    "# 변수의 선언이 분리되어도 구조 분해를 통해 값을 할당할 수 있습니다. #"
+);
 let aa, bb;
 [aa, bb] = [1, 2];
 console.log(aa); //1
 console.log(bb); //2
 
-console.log('# 함수가 반환한 배열 분석 #');
+console.log("# 함수가 반환한 배열 분석 #");
 function f() {
     return [1, 2, 3, 4, 5, 6];
 }
@@ -41,7 +48,7 @@ console.log(a1);
 console.log(b1);
 console.log(rest1);
 
-console.log('# 일부 반환 값 무시하기 #');
+console.log("# 일부 반환 값 무시하기 #");
 [a1, , c1, ...rest1] = f();
 console.log(a1);
 console.log(c1);
