@@ -95,4 +95,4 @@ const dog = new Dog("바둑이");
 animal.speak();
 dog.speak();
 
-// #### Species
+// https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes
