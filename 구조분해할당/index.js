@@ -72,8 +72,8 @@ console.log(foo1);
 console.log('#기본값');
 //객체로부터 해체된 값이 undefined인 경우, 변수에 기본값을 할당할 수 있습니다.
 let { a3 = 20, b3 = 50 } = { a3: 3 };
-console.log(a3);
-console.log(b3);
+console.log(a3); //3
+console.log(b3); //50
 
 //새로운 변수명 할당과 기본값 할당을 한번에 할 수 있습니다.
 let { a4: aa1 = 50, b4: bb1 = 40 } = { a4: 3 };
