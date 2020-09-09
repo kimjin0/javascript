@@ -80,3 +80,76 @@ let { a4: aa1 = 50, b4: bb1 = 40 } = { a4: 3 };
 console.log(aa);
 
 // 여기공부할차례 >>> ## 함수 매개변수의 기본값 설정하기(ES5 버전)
+console.log('### 중첩된 객체 및 배열의 구조 분해 ###');
+var metadata = {
+    title: 'Scratchpad',
+    translations: [
+        {
+            locale: 'de',
+            localization_tags: [],
+            last_edit: '2014-04-14T08:43:37',
+            url: '/de/docs/Tools/Scratchpad',
+            title: 'JavaScript-Umgebung',
+        },
+    ],
+    url: '/en-US/docs/Tools/Scratchpad',
+};
+
+let {
+    title: setTitle,
+    translations: [{ title: localeTitle }],
+    url: setUrl,
+} = metadata;
+
+console.log(setTitle);
+console.log(localeTitle);
+console.log(setUrl);
+
+// for of 반복문과 구조 분해
+var people = [
+    {
+        name: 'Mike Smith',
+        family: {
+            mother: 'Jane Smith',
+            father: 'Harry Smith',
+            sister: 'Samantha Smith',
+        },
+        age: 35,
+    },
+    {
+        name: 'Tom Jones',
+        family: {
+            mother: 'Norah Jones',
+            father: 'Richard Jones',
+            brother: 'Howard Jones',
+        },
+        age: 25,
+    },
+];
+
+for (var {
+    name: n,
+    family: { mother: m },
+} of people) {
+    console.log(`name : ${n}, mother name : ${m}`);
+}
+
+// 함수 매개변수로 전달된 객체에서 필드 해체하기
+
+var user = {
+    id: 42,
+    displayName: 'jdoe',
+    fullName: {
+        firstName: 'John',
+        lastName: 'Doe',
+    },
+};
+function userId({ fullName }) {
+    return fullName.firstName;
+}
+function whoise({ displayName: displayName, fullName: { lastName: lastName } }) {
+    console.log(displayName + ' is ' + lastName);
+}
+
+console.log('userId: ' + userId(user)); // "userId: 42"
+whoise(user);
