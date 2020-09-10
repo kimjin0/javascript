@@ -42,9 +42,5 @@ var arr2 = function (n) {
 };
 arr2(4); //4
 
-// function foo(n) {
-//     var f = () => arguments[0] + n; // foo's implicit arguments binding. arguments[0] is n
-//     return f();
-// }
-
-// console.log(foo(4)); // 2
+var func = () => ({ foo: 1 });
+console.log(func);
