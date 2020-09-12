@@ -21,15 +21,17 @@ f(1, 2, 3); // 6
 f(1, 2, 3, 4); // 6 (4번 째 파라미터는 해체되지 않음)
 
 // 예제 2
-console.log('하나의 값만 있더라도 마지막 인수는 여전히 배열을 갖습니다.');
-myFun('one', 'two', 'three');
+console.log("하나의 값만 있더라도 마지막 인수는 여전히 배열을 갖습니다.");
+// myFun("one", "two", "three");
 
 // a, one
 // b, two
 // manyMoreArgs, [three]
 
 // 예제 3
-console.log('theArgs 가 배열이므로, length 프로퍼티를 사용해 엘리먼트의 수를 얻을 수 있습니다.');
+console.log(
+    "theArgs 가 배열이므로, length 프로퍼티를 사용해 엘리먼트의 수를 얻을 수 있습니다."
+);
 function fun1(...theArgs) {
     console.log(theArgs.length);
 }
@@ -38,8 +40,9 @@ fun1(5); // 1
 fun1(5, 6, 7); // 3
 
 //예제4
-console.log('rest 파라미터는 첫 번째 인수 다음의 모든 인수를 배열로 모으는데 사용됩니다. 각각은 첫 번째 파라미터와 곱해져 배열로 반환됩니다');
-// 요건함 따라 해보자...
+console.log(
+    "rest 파라미터는 첫 번째 인수 다음의 모든 인수를 배열로 모으는데 사용됩니다. 각각은 첫 번째 파라미터와 곱해져 배열로 반환됩니다"
+);
 function multiply(multiplier, ...theArgs) {
     return theArgs.map(function (element) {
         return multiplier * element;
@@ -48,3 +51,10 @@ function multiply(multiplier, ...theArgs) {
 
 var arr = multiply(2, 1, 2, 3);
 console.log(arr); // [2, 4, 6]
+
+// 화살표 함수로 만들면 이렇게 되겠지...
+let multiplay = (a, ...rest) => {
+    return rest.map((v) => a * v);
+};
+let arr2 = multiplay(2, 1, 2, 3);
+console.log(arr2);
