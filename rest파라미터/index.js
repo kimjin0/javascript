@@ -21,12 +21,17 @@ f(1, 2, 3); // 6
 f(1, 2, 3, 4); // 6 (4번 째 파라미터는 해체되지 않음)
 
 // 예제 2
+let myFun = (a, b, ...moreArgs) => {
+    console.log(a);
+    console.log(b);
+    console.log(moreArgs);
+};
 console.log("하나의 값만 있더라도 마지막 인수는 여전히 배열을 갖습니다.");
-// myFun("one", "two", "three");
+myFun("one", "two", "three");
 
-// a, one
+// a , one
 // b, two
-// manyMoreArgs, [three]
+// moreArgs, [three]
 
 // 예제 3
 console.log(
