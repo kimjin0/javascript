@@ -153,3 +153,16 @@ function whoise({ displayName: displayName, fullName: { lastName: lastName } }) 
 
 console.log('userId: ' + userId(user)); // "userId: 42"
 whoise(user);
+
+console.clear();
+
+let userArray = ['kimjin0', '김진형'];
+userInfo = (name, id) => {
+    console.log(name);
+    console.log(id);
+};
+
+userInfo(...userArray);
+console.log(userArray.map((item) => item.length));
+console.log(userArray.map(({ length: size }) => size));
+console.log(userArray.map(({ length }) => length));
