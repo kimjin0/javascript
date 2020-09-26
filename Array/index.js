@@ -11,9 +11,18 @@ console.log(Array.isArray([1, 2, 3, 4])); // true
 console.log(Array.isArray({ foo: 123 })); //false
 console.log(Array.isArray(Array.prototype)); //true
 
-// ### Array.of() 메서드는 인자의 수나 유형에 관계없이 가변 인자를 갖는 새 Array 인스턴스를 만듭니다.
+// ### Array.of()
+// 메서드는 인자의 수나 유형에 관계없이 가변 인자를 갖는 새 Array 인스턴스를 만듭니다.
 console.log(Array.of(7)); //[7]
 console.log(Array.of(1, 2, 3)); //[1,2,3]
+
+// ### Array.prototype.concat()
+// concat() 메서드는 인자로 주어진 배열이나 값들을 기존 배열에 합쳐서 새 배열을 반환합니다.
+// - 기존배열을 변경하지 않습니다.
+// - 추가된 새로운 배열을 반환합니다.
+const array1 = ["a", "b", "c"];
+const array2 = [1, 2, 3];
+console.log(array1.concat(array2));
 
 // let fruits = ['사과', '바나나', '딸기'];
 
