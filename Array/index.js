@@ -2,7 +2,7 @@
 
 // ### Array.from()
 // 배열 객체(array-like object)나반복 가능한 객체(iterable object)를 얕게 복사해새로운Array 객체를 만듭니다.
-let Astr = 'foo';
+let Astr = "foo";
 console.log(Array.from(Astr));
 
 // ### Array.isArray()
@@ -10,6 +10,10 @@ console.log(Array.from(Astr));
 console.log(Array.isArray([1, 2, 3, 4])); // true
 console.log(Array.isArray({ foo: 123 })); //false
 console.log(Array.isArray(Array.prototype)); //true
+
+// ### Array.of() 메서드는 인자의 수나 유형에 관계없이 가변 인자를 갖는 새 Array 인스턴스를 만듭니다.
+console.log(Array.of(7)); //[7]
+console.log(Array.of(1, 2, 3)); //[1,2,3]
 
 // let fruits = ['사과', '바나나', '딸기'];
 
