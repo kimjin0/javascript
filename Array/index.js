@@ -24,6 +24,11 @@ const array1 = ["a", "b", "c"];
 const array2 = [1, 2, 3];
 console.log(array1.concat(array2));
 
+// ### Array.prototype.fill();
+const array3 = [1, 3, 5, 7, 9];
+console.log(array3.fill(3, 1, 2)); // [1,3,3,4,5]
+console.log(array3.fill(3, 3)); //[1,3,5,3,3]
+
 // let fruits = ['사과', '바나나', '딸기'];
 
 // //배열의 항목들을 순환하며 처리하기
