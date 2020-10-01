@@ -14,3 +14,5 @@ var inventory = [
 // let result = inventory.find((fruit) => fruit.name === "bananas");
 let result = inventory.find((fruit) => fruit.name === "cherries");
 console.log(result);
+ㅠㅠ
+    - _ -;;
