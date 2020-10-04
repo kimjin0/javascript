@@ -170,6 +170,11 @@ userInfo = (name, id) => {
 };
 
 userInfo(...userArray);
+
 console.log(userArray.map((item) => item.length));
 console.log(userArray.map(({ length: size }) => size));
 console.log(userArray.map(({ length }) => length));
+
+// console.log(userArray.map((item) => item.length));
+// console.log(userArray.map(({ length: size }) => size));
+// console.log(userArray.map(({ length }) => length));
