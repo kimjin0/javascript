@@ -22,6 +22,26 @@ var auth = [
     { key: '작곡심사', value: '관리자' },
 ];
 
-let result2 = auth.find((item) => item.key === '합창심사');
-console.log(result2);
-console.log(result2.value.split(','));
+// let result2 = auth.find((item) => item.key === '합창심사');
+// console.log(result2);
+// console.log(result2.value.split(','));
+
+function userInfo(auth, whois) {
+    let result2 = auth.find((item) => item.key === whois);
+    if (result2 === undefined) {
+        return false;
+    }
+    return result2;
+    // console.log(result2);
+    // console.log(result2.value.split(','));
+}
+
+function whoise({ key: key, value: auth }) {
+    if (key === undefined) {
+        return false;
+    } else {
+        return auth;
+    }
+}
+
+console.log(whoise(userInfo(auth, '합창심사')));
