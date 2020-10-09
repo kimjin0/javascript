@@ -3,14 +3,21 @@
 
 // 매개변수 목록 내 구조분해할당도 지원됨.
 var f = ([a, b] = [1, 2], { x: c } = { x: a + b }) => a + b + c;
-console.log(f());
+console.log(f()); //6
+
+var d = ([a, b] = [3, 4], { x: c } = { x: a + b }) => a + b + c;
+console.log(d());
+
+//새로운 변수명 할당과 기본값 할당을 한번에 할 수 있습니다.
+let { a4: aa1 = 50, b4: bb1 = 40 } = { a4: 3, b4: 4 };
+console.log(bb1);
 
 // 짧은 함수
-const items = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium'];
+const items = ["Hydrogen", "Helium", "Lithium", "Beryllium"];
 
 // 보통의 함수
 items.map(function (item) {
-    console.log('보통의 함수 : ' + item.length);
+    console.log("보통의 함수 : " + item.length);
 });
 //잛아짐 1단계
 console.log(items.map((item) => item.length));
@@ -30,7 +37,7 @@ console.log(rst); // [8, 6, 7, 9]
 let rst1 = items.map(({ length }) => length);
 console.log(rst1); // [8, 6, 7, 9]
 
-console.log('### 바인딩 되지 않은 arguments ###');
+console.log("### 바인딩 되지 않은 arguments ###");
 // 화살표 함수는 arguments 객체를 바인드 하지 않습니다.
 // 때문에, arguments는  그저 둘러싸는 범위(scope) 내 이름에 대한 참조입니다.
 var arguments = [1, 2, 3];
