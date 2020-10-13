@@ -1,2 +1,6 @@
-20201013 : 표 쪼개기 > (https://youtu.be/yCbJ1D1Ylik)
-20201013 : 실습준비 > (https://ita.watv.org/education/contents/dev/27/332)
+> 20201013
+1. 표 쪼개기 > (https://youtu.be/yCbJ1D1Ylik)
+2. 실습준비 > (https://ita.watv.org/education/contents/dev/27/332)
+
+
+> 20201014 > SQL 과제풀이
