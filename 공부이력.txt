@@ -3,5 +3,8 @@
 2. 실습준비 > (https://ita.watv.org/education/contents/dev/27/332)
 
 
-> 20201014 > SQL 과제풀이
-> 20201015 > SQL 과제풀이
+> 20201014 
+1. SQL 과제풀이
+
+> 20201015 
+1. SQL 과제풀이
