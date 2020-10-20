@@ -1,22 +1,22 @@
 // Q1. make a string out of an array
 {
-    console.log("Q1. make a string out of an array");
-    const fruits = ["apple", "banana", "orange"];
-    const result = fruits.join(" and ");
+    console.log('Q1. make a string out of an array');
+    const fruits = ['apple', 'banana', 'orange'];
+    const result = fruits.join(' and ');
     console.log(result);
 }
 
 // Q2. make an array out of a string
 {
-    console.log("Q2. make an array out of a string");
-    const fruits = "🍎, 🥝, 🍌, 🍒";
-    const result = fruits.split(",", 3);
+    console.log('Q2. make an array out of a string');
+    const fruits = '🍎, 🥝, 🍌, 🍒';
+    const result = fruits.split(',', 3);
     console.log(result);
 }
 
 // Q3. make this array look like this: [5, 4, 3, 2, 1]
 {
-    console.log("Q3. make this array look like this: [5, 4, 3, 2, 1]");
+    console.log('Q3. make this array look like this: [5, 4, 3, 2, 1]');
     const array = [1, 2, 3, 4, 5];
     console.log(array.reverse());
 }
@@ -24,7 +24,7 @@
 // Q4. make new array without the first two elements
 // 첫번째,두번째 제외한 3,4,5를 가지고 새로운 배열을 만들자.
 {
-    console.log("Q4. make new array without the first two elements");
+    console.log('Q4. make new array without the first two elements');
     const array = [1, 2, 3, 4, 5];
     // ※slice 배열에서 원하는 부분만 리턴
     // ※splice 배열자체를 삭제하고 리턴함. (array자체를 변형하지 않고 새로운 배열을 만들어야 하기에 여기에서는 사용하면 않됨.)
@@ -42,17 +42,11 @@ class Student {
         this.score = score;
     }
 }
-const students = [
-    new Student("A", 29, true, 45),
-    new Student("B", 28, false, 80),
-    new Student("C", 30, true, 90),
-    new Student("D", 40, false, 66),
-    new Student("E", 18, true, 88),
-];
+const students = [new Student('A', 29, true, 45), new Student('B', 28, false, 80), new Student('C', 30, true, 90), new Student('D', 40, false, 66), new Student('E', 18, true, 88)];
 
 // Q5. find a student with the score 90
 {
-    console.log("Q5. find a student with the score 90");
+    console.log('Q5. find a student with the score 90');
     const result = students.find(
         (student) => student.score === 90
         // console.log(student, index);
@@ -63,7 +57,7 @@ const students = [
 // Q6. make an array of enrolled students
 // 수업에 등록된 학생만 골라내어랴...
 {
-    console.log("Q6. make an array of enrolled students");
+    console.log('Q6. make an array of enrolled students');
     const result = students.filter((student) => student.enrolled);
     console.log(result);
 }
@@ -110,7 +104,7 @@ const students = [
         .map((student) => student.score)
         .filter((score) => score >= 50)
         .join();
-    console.log(result);
+    console.log('#####', result);
 }
 
 // Bonus! do Q10 sorted in ascending order
